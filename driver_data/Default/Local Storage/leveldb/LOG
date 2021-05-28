@@ -1,0 +1,14 @@
+2021/05/28-10:02:52.976 2404 Reusing MANIFEST C:\Users\Rushi\Desktop\LinkedIn-Requests-Auto-Accept\driver_data\Default\Local Storage\leveldb/MANIFEST-000001
+2021/05/28-10:02:52.978 2404 Recovering log #16
+2021/05/28-10:02:52.978 2404 Level-0 table #18: started
+2021/05/28-10:02:53.117 2404 Level-0 table #18: 15357 bytes OK
+2021/05/28-10:02:53.349 2404 Delete type=0 #16
+2021/05/28-10:02:53.349 2f50 Compacting 4@0 + 1@1 files
+2021/05/28-10:02:53.588 2f50 Generated table #20@0: 12 keys, 3805 bytes
+2021/05/28-10:02:53.588 2f50 Compacted 4@0 + 1@1 files => 3805 bytes
+2021/05/28-10:02:53.713 2f50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/05/28-10:02:53.715 2f50 Delete type=2 #8
+2021/05/28-10:02:53.715 2f50 Delete type=2 #11
+2021/05/28-10:02:53.715 2f50 Delete type=2 #13
+2021/05/28-10:02:53.765 2f50 Delete type=2 #16
+2021/05/28-10:02:53.765 2f50 Delete type=2 #18
