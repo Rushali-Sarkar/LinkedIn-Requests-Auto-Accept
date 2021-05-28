@@ -10,13 +10,14 @@ def accept_all_requests():
     options.add_argument("user-data-dir={}\driver_data".format(os.getcwd()))
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
     driver.get("https://linkedin.com")
+    while "1" != input("Please Press 1 After you Have Signed In To LinkedIn: "):
+        pass
     page_to_access = "https://www.linkedin.com/mynetwork/"
     print("Going to the Your Networks Page: ")
     driver.get(page_to_access)
     try:
         element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CLASS_NAME, "invitation-card__action-btn")))
-    finally:
         all_elements = driver.find_elements_by_class_name("invitation-card__action-btn")
         for element in all_elements:
             get_label = element.get_attribute("aria-label")
@@ -24,9 +25,8 @@ def accept_all_requests():
                 print(get_label)
                 element.click()
                 print("The request is accepted")
+    except Exception as e:
+        print("There are no Requests to Accept")
     driver.close()
     return
-
-while "1" != input("Please Enter 1 After you Have Signed In to LinkedIn: "):
-    pass
 accept_all_requests()
